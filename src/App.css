@@ -1,0 +1,50 @@
+:root {
+    --medium: hsl(283, 92%, 62%);
+    --dark: hsl(257, 86%, 16%);
+    --light: hsl(202, 100%, 92%);
+    --lightclear: hsl(202, 100%, 92%, .5);
+}
+
+h1, h3, h4, h5 {
+    display: flex;
+    justify-content: center;
+    color: var(--light);
+}
+
+.button {
+    border: 1px solid var(--medium);
+    border-radius: 5px;
+    padding: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    background-color: var(--dark);
+    color: var(--light);
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--light);
+    color: var(--dark);
+    font-weight: bold;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    border: 2px solid var(--medium);
+    border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+body {
+    background-color: var(--dark);
+}
