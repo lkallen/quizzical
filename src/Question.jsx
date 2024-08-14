@@ -38,7 +38,7 @@ export default function Question(props) {
     
     return (
         <div>
-            <h4>{question}</h4>
+            <h4 className="question-text">{question}</h4>
             <div className="buttonContainer">
                 {answerButtons}
             </div>

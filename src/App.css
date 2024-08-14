@@ -1,20 +1,38 @@
 :root {
     --medium: hsl(283, 92%, 62%);
     --dark: hsl(257, 86%, 16%);
+    --darkclear: hsla(257, 86%, 16%, 0.8);
     --light: hsl(202, 100%, 92%);
-    --lightclear: hsl(202, 100%, 92%, .5);
+    /* --lightclear: hsl(202, 100%, 92%, .5); */
+    --lightclear: hsla(202, 100%, 92%, 0.5);
+    --transparentyellow: hsla(60, 100%, 50%, 0.8);
 }
 
-h1, h3, h4, h5 {
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h3, h4, h5 {
     display: flex;
     justify-content: center;
     color: var(--light);
 }
 
+h1 {
+    display: flex;
+    justify-content: center;
+    color: var(--transparentyellow)
+}
+
 .button {
     border: 1px solid var(--medium);
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
     margin-right: 5px;
     margin-left: 5px;
     margin-bottom: 0px;
@@ -26,25 +44,34 @@ h1, h3, h4, h5 {
 }
 
 .button:hover {
-    background-color: var(--light);
-    color: var(--dark);
-    font-weight: bold;
+    background-color: var(--lightclear);
+    /* color: var(--transparentyellow); */
+    border: 1px solid var(--transparentyellow);
+    /* font-weight: bold; */
 }
 
 .buttonContainer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin: 15px;
+    border-bottom: 1.5px solid var(--transparentyellow);
 }
 
 .container {
     border: 2px solid var(--medium);
     border-radius: 5px;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-left: 15%;
     margin-right: 15%;
+    padding: 20px;
 }
 
 body {
     background-color: var(--dark);
+}
+
+.question-text {
+    font-weight: lighter;
+    display: flex;
+    flex-wrap: wrap;
 }
