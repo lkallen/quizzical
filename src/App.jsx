@@ -8,15 +8,20 @@ import { nanoid } from 'nanoid'
 import Header from './Header'
 
 import {decode} from 'html-entities';
+import Menu from './Menu'
 
 export default function App() {
   
   const [quizData, setQuizData] = useState([])
 
-  useEffect(() => {
+  function fetchData() {
     fetch("https://opentdb.com/api.php?amount=5&type=multiple")
     .then(res => res.json())
     .then(data => setQuizData(data.results))
+  }
+
+  useEffect(() => {
+    fetchData()
   }, [])
 
   const questionData = quizData.map(question => {
@@ -48,9 +53,12 @@ export default function App() {
   return (
     <div>
       <Header />
+      <Menu />
       <div className='container'>
         {quizElements}
       </div>
+      <br></br>
+      <Menu />
       
     </div>
   )

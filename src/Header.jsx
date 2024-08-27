@@ -1,6 +1,6 @@
 export default function Header() {
     return (
-        <div>
+        <div className="header-component">
             <h1>Quizzical!</h1>
         </div>
     )

@@ -30,6 +30,11 @@ h1 {
     color: var(--transparentyellow)
 }
 
+.menu {
+    display: flex;
+    justify-content: center;
+}
+
 .button {
     border: 1px solid var(--medium);
     border-radius: 5px;
