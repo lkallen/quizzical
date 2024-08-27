@@ -28,7 +28,7 @@ export default function Button(props) {
             >
                 {text}
             </button>
-            <h5>
+            <h5 id="button-icon">
                 {isClicked ? 
                     (isCorrect ? "✓" : "✕") : ""}
             </h5>

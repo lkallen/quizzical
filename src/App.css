@@ -34,10 +34,8 @@ h1 {
     border: 1px solid var(--medium);
     border-radius: 5px;
     padding: 10px;
-    margin-right: 5px;
-    margin-left: 5px;
-    margin-bottom: 0px;
-    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 20px;
     background-color: var(--dark);
     color: var(--light);
     transition-duration: 0.4s;
@@ -46,24 +44,29 @@ h1 {
 
 .button:hover {
     background-color: var(--lightclear);
-    /* color: var(--transparentyellow); */
     border: 1px solid var(--transparentyellow);
-    /* font-weight: bold; */
 }
 
 .buttonContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
     margin: 15px;
     border-bottom: 1.5px solid var(--transparentyellow);
 }
 
+#button-icon {
+    color: var(--transparentyellow);
+    display: inline;
+}
+
+/* outer question container */
+
 .container {
     border: 2px solid var(--medium);
     border-radius: 5px;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 10%;
+    margin-right: 10%;
     padding: 20px;
 }
 
