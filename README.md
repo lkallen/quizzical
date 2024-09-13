@@ -1,8 +1,14 @@
-# React + Vite
+# Quizzical
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+What is the URL of your GitHub repo for your project? Your project must include a readme.md describing the app's purpose, major functions, dependencies, and build/deploy instructions.
 
-Currently, two official plugins are available:
+### Overview:
+- This is a trivia/quiz app I built based on a solo project suggested as part of a React course on Scrimba, with some modifications.
+- The app uses the Open Trivia Database API to retrieve a random selection of 5 questions, each with multiple choice options
+- The player can select an answer choice and can see instant feedback regarding if the choice was correct or incorrect, and if incorrect, the player can then try another choice. The immediate feedback and additional guesses (as opposed to answering each question and then seeing a final score after submission) was one of the major differences as compared to the guidelines included with Scrimba.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Tech & Resources:
+- React app created using Vite
+- Open Trivia Database API
+- Dependencies: html-entities (needed in order to decode text from the API response and replace entities with characters)
+- Deployed via Vercel
